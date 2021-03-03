@@ -1,0 +1,124 @@
+:root {
+    --color-body: #918ca4;
+    --color-border: #ccc;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #a2a0b7;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+html {
+    /* 62.5% of 16px = 10px */
+    font-size: 62.5%;
+}
+
+.Box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 40px;
+    background: rgba(0,0,0,.8);
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+    border-radius: 1.5rem;
+}
+
+.Box h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #b3d4ff;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.Box .inputBox{
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.Box .inputBox input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 13px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid var(--color-border);
+    outline: 0;
+    background: transparent;
+}
+
+.Box .inputBox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 1.3rem;
+    color: #fff;
+    pointer-events: none;
+    transition:all 1s;
+    outline: 0;
+}
+
+.Box .inputBox input:focus ~ label,
+.Box .inputBox input:valid ~ label
+{
+    top: -22px;
+    left: 0;
+    color: var(--color-border);
+}
+
+.btn{
+    width: 35%;
+    height: 50px;
+    margin: 0 25px;
+    background: radial-gradient(#00d9ff, #417cc8);
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 0;
+    padding: 0.5rem 0.7rem;
+    border-radius: 5px;
+    outline: 0;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.btn:hover{
+    background: #031e41;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.Goto{
+    text-align: center;
+    margin-top: 30px;
+    color: var(--color-border);
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.Goto:hover{
+    color: #fff;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
