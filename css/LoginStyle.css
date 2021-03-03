@@ -1,18 +1,12 @@
 :root {
-    --color-primary: #2584ff;
-    --color-secondary: #00d9ff;
-    --color-accent: #ff3400;
-    --color-headings: #1b0760;
     --color-body: #918ca4;
-    --color-body-darker: #5c5577;
     --color-border: #ccc;
 }
 
 body{
-    margin: 0;
-    padding: 0;
-    font-family: SansSerif, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #a2a0b7;
+    line-height: 1.5;
     box-sizing: border-box;
 }
 
@@ -30,31 +24,32 @@ html {
     padding: 40px;
     background: rgba(0,0,0,.8);
     box-shadow: 0 15px 25px rgba(0,0,0,.5);
-    border-radius: 1rem;
+    border-radius: 1.5rem;
 }
 
 .Box h2{
     margin: 0 0 30px;
     padding: 0;
-    color: var(--color-body);
+    color: #b3d4ff;
     text-align: center;
     font-size: 2.5rem;
 }
 
 .Box .inputBox{
     position: relative;
+    margin-bottom: 1rem;
 }
 
 .Box .inputBox input{
     width: 100%;
     padding: 10px 0;
-    font-size: 8px;
+    font-size: 13px;
     color: #fff;
     letter-spacing: 1px;
     margin-bottom: 30px;
     border: none;
     border-bottom: 1px solid var(--color-border);
-    outline: none;
+    outline: 0;
     background: transparent;
 }
 
@@ -64,10 +59,11 @@ html {
     left: 0;
     letter-spacing: 1px;
     padding: 10px 0;
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: #fff;
     pointer-events: none;
     transition:all 1s;
+    outline: 0;
 }
 
 .Box .inputBox input:focus ~ label,
@@ -75,47 +71,50 @@ html {
 {
     top: -22px;
     left: 0;
-    color: #ffffff;
-    font-size: 1.2rem;
-    outline: none;
+    color: var(--color-border);
 }
 
-.Box input[type = 'submit']
-{
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #03a9f4;
-    font-size: 1.7rem;
-    font-weight: 900;
-    width: 150px;
+.btn{
+    width: 35%;
     height: 50px;
-    text-align: center;
-    margin-left: 120px;
-    padding: 1rem 2rem;
-    cursor: pointer;
+    margin: 0 25px;
+    background: radial-gradient(#00d9ff, #417cc8);
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 0;
+    padding: 0.5rem 0.7rem;
     border-radius: 5px;
-    transition: all 2s;
+    outline: 0;
+    cursor: pointer;
+    transition: all 1s;
 }
 
-.Box input[type = 'submit']:hover{
-    background: #076d98;
+.btn:hover{
+    background: #031e41;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 15px;
 }
 
+a{
+    text-decoration: none;
+}
 
+.Goto{
+    text-align: center;
+    margin-top: 30px;
+    color: var(--color-border);
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 1s;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.Goto:hover{
+    color: #fff;
+    font-weight: bolder;
+}
 
 
 
