@@ -105,25 +105,16 @@ a {
 }
 
 .nav__item {
+  color: #a2a0b7;
   padding: 0.5rem 2rem;
   border-bottom: 1px solid #222;
-}
-
-.nav__item > a {
-  color: #a2a0b7;
   transition: color 0.3s;
 }
 
-.nav__item > a:hover {
+
+.nav__item:hover {
   color: #fff;
 }
-
-.nav__toggler {
-  opacity: 0.5;
-  transition: box-shadow 0.15s;
-  cursor: pointer;
-}
-
 
 @media screen and (min-width: 768px) {
   .nav__toggler {
@@ -136,6 +127,7 @@ a {
     font-size: 1.6rem;
     max-height: 100%;
     opacity: 1;
+
   }
 
   .nav__item {
