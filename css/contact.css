@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -29,12 +28,6 @@
     font-weight: 300;
     color: #f5f5f5;
     padding-bottom: 20px;
-    animation: contactMove 5s ease-out;
-}
-
-@keyframes contactMove {
-    from {left: -280px;}
-    to {left: 8px;}
 }
 
 .container{
@@ -43,7 +36,6 @@
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-
 }
 
 .container .contactInfo
