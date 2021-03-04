@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: #cac6c6;
+}
+
+
+.alert {
+    position: absolute;
+    top: 10%;
+    padding: 20px;
+    /*background-color: #336934;*/
+    background-color: #1b6eae;
+    width: 40%;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+.wrapper{
+    max-width: 1090px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.wrapper .table{
+    /*background: #fff;*/
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(203,202,214,1) 0%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
+    width: calc(33% - 20px);
+    padding: 30px 30px;
+    position: relative;
+
+    box-shadow: 0 5px 10px rgba(60, 60, 60, 0.7);
+    border-radius: 20px;
+}
+.table .price-section{
+    display: flex;
+    justify-content: center;
+}
+.table .price-area{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    padding: 2px;
+}
+.price-area .inner-area{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    line-height: 117px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+.price-area .inner-area .text{
+    font-size: 25px;
+    font-weight: 400;
+    position: absolute;
+    top: -10px;
+    left: 17px;
+}
+.price-area .inner-area .price{
+    font-size: 45px;
+    font-weight: 500;
+    margin-left: 16px;
+}
+.table .package-name{
+    width: 100%;
+    height: 2px;
+    margin: 35px 0;
+    position: relative;
+}
+.table .package-name::before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 25px;
+    font-weight: 500;
+    background: #fff;
+    padding: 0 15px;
+    transform: translate(-50%, -50%);
+}
+.table .features li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.features li .list-name{
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.table .edit,
+.table .delete
+{
+    width: 120px;
+    display: inline-block;
+    margin: 25px 8px;
+}
+.table .edit button,
+.table .delete button
+{
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.table .edit button:hover,
+.table .delete button:hover
+{
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.basic ::selection,
+.basic .price-area,
+.basic .inner-area{
+    background: #04385a;
+}
+.basic .edit button{
+    border: 2px solid #007e71;
+    background: #fff;
+    color: #000000;
+}
+.basic .edit button:hover{
+    background: linear-gradient(to right, #99f2c8, #1f4037);
+    color: #fff;
+}
+
+.basic .delete button{
+    border: 2px solid #480202;
+    background: #fff;
+    color: #0c0902;
+}
+.basic .delete button:hover{
+    background: linear-gradient(to right, #904e95, #e96443);
+    border-width: 2px;
+    color: #fff;
+}
+
+.package-name h2{
+    text-align: center;
+}
+
