@@ -54,10 +54,11 @@ html,body{
 }
 .wrapper nav .tab{
   position: absolute;
-  height: 100%;
+  margin-left:2px ;
+  height: 80%;
   width: 20%;
   left: 0;
-  bottom: 0;
+  bottom: 8px;
   z-index: 0;
   border-radius: 50px;
   background: linear-gradient(45deg, #05abe0 0%,#8200f4 100%);
