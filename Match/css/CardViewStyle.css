@@ -17,7 +17,7 @@ body{
 
 .alert {
     position: absolute;
-    top: 10%;
+    top: 5%;
     padding: 20px;
     /*background-color: #336934;*/
     background-color: #1b6eae;
@@ -25,7 +25,6 @@ body{
     color: white;
     text-align: center;
     border-radius: 15px;
-    margin-bottom: 40px;
 }
 
 
@@ -226,4 +225,14 @@ body{
     font-size: 17px;
     text-transform: uppercase;
     box-shadow: 0 5px 10px rgba(0,0,0,0.12);
+}
+
+.comment a
+{
+    text-decoration: none;
+    text-align: center;
+    margin-left: 90px;
+    color: #031e41;
+    cursor: pointer;
+    font-weight: 900;
 }
