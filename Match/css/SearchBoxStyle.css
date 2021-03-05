@@ -9,11 +9,11 @@ html,body{
     display: grid;
     height: 100%;
     place-items: center;
-    background: #664AFF;
+    background: #0b0434;
 }
 ::selection{
     color: #fff;
-    background: #664AFF;
+    background: #0b0434;
 }
 .search-box{
     position: relative;
