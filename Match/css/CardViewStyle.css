@@ -25,6 +25,7 @@ body{
     color: white;
     text-align: center;
     border-radius: 15px;
+    margin-bottom: 40px;
 }
 
 
@@ -46,6 +47,7 @@ body{
     box-shadow: 0 5px 10px rgba(60, 60, 60, 0.7);
     border-radius: 20px;
 }
+
 .table .price-section{
     display: flex;
     justify-content: center;
@@ -78,6 +80,9 @@ body{
     font-weight: 500;
     margin-left: 16px;
 }
+
+
+
 .table .package-name{
     width: 100%;
     height: 2px;
@@ -113,7 +118,9 @@ body{
     margin: 25px 8px;
 }
 .table .edit button,
-.table .delete button
+.table .delete button,
+.premium .delete button,
+.premium .edit button
 {
     width: 100%;
     height: 50px;
@@ -127,7 +134,9 @@ body{
     transition: all 0.3s ease;
 }
 .table .edit button:hover,
-.table .delete button:hover
+.table .delete button:hover,
+.premium .delete button:hover,
+.premium .edit button:hover
 {
     border-radius: 5px;
     font-weight: 600;
@@ -138,22 +147,30 @@ body{
 .basic .inner-area{
     background: #04385a;
 }
-.basic .edit button{
+.basic .edit button,
+.premium .edit button
+{
     border: 2px solid #007e71;
     background: #fff;
     color: #000000;
 }
-.basic .edit button:hover{
+.basic .edit button:hover,
+.premium .edit button:hover
+{
     background: linear-gradient(to right, #99f2c8, #1f4037);
     color: #fff;
 }
 
-.basic .delete button{
+.basic .delete button,
+.premium .delete button
+{
     border: 2px solid #480202;
     background: #fff;
     color: #0c0902;
 }
-.basic .delete button:hover{
+.basic .delete button:hover,
+.premium .delete button:hover
+{
     background: linear-gradient(to right, #904e95, #e96443);
     border-width: 2px;
     color: #fff;
@@ -163,3 +180,50 @@ body{
     text-align: center;
 }
 
+.premium ::selection,
+.premium .price-area,
+.premium .inner-area,
+.premium .btn button{
+    background: #048c13;
+}
+
+.table .ribbon{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    overflow: hidden;
+}
+.table .ribbon::before,
+.table .ribbon::after{
+    position: absolute;
+    content: "";
+    z-index: -1;
+    display: block;
+    border: 7px solid #17ac06;
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+.table .ribbon::before{
+    top: 0;
+    right: 15px;
+}
+.table .ribbon::after{
+    bottom: 15px;
+    left: 0;
+}
+.table .ribbon span{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    transform: rotate(-45deg);
+    width: 200px;
+    background: #237902;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.12);
+}
