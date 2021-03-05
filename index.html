@@ -1,28 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main Page</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-      rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+            rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/MainStyle.css" />
 </head>
 <body>
 
-    <header>
-        <nav id=”navbar” class="nav">
-            <ul class="list nav__list">
-                <a class="nav__item" id="homepage" href="#">Main Page</a>
-                <a class="nav__item" id="register" href="signup.html">Register</a>
-                <a class="nav__item" id="login" href="login.html">Login</a>
-            </ul>
-        </nav>
-        <p style="text-align: center;font-size: 3rem">سلام. به فروشگاه آنلاین وبلوپرز خوش آمدید.</p>
-    </header>
+<div class="wrapper">
+    <nav>
+        <input type="radio" name="tab" id="homepage" checked>
+        <input type="radio" name="tab" id="login">
+        <input type="radio" name="tab" id="register">
+        <input type="radio" name="tab" id="contact">
+        <input type="radio" name="tab" id="product">
+
+
+        <label for="homepage" class="homepage"><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a></label>
+        <label for="login" class="login"><a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i>LogIn</a></label>
+        <label for="register" class="register"><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>Register</a></label>
+        <label for="contact" class="contact"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>Contact</a></label>
+        <label for="product" class="product"><a href="#"><i class="fa fa-folder" aria-hidden="true"></i>All Product</a></label>
+        <div class="tab">
+        </div>
+    </nav>
+</div>
+
+<div class="alert">
+    <strong>Welcome To Webelopers Shop</strong>
+</div>
 
 </body>
 </html>
