@@ -84,11 +84,7 @@ body{
 .close-icon:hover{
     background: #efefef;
 }
-.wrapper:hover{
 
-    animation: hide_toast 1s;
-
-}
 @keyframes hide_toast {
     0% {
         transform: translateX(20px);

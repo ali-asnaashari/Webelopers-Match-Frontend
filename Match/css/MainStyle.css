@@ -10,7 +10,7 @@ html,body{
   height: 1%;
   place-items: center;
   text-align: center;
-  background: #f2f2f2;
+  background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(224,210,210,1) 0%, rgba(225,210,209,1) 3%, rgba(255,219,168,1) 100%, rgba(252,176,69,1) 100%);
   /* 62.5% of 16px = 10px */
   font-size: 62.5%;
 }
@@ -41,11 +41,11 @@ html,body{
   text-decoration: none;
   transition: color 0.6s ease;
 }
-.wrapper nav #homepage:checked ~ label.homepage a,
-.wrapper nav #login:checked ~ label.login a,
-.wrapper nav #contact:checked ~ label.contact a,
-.wrapper nav #register:checked ~ label.register a,
-.wrapper nav #product:checked ~ label.product a{
+.wrapper nav #_homepage:checked ~ label._homepage a,
+.wrapper nav #_login:checked ~ label._login a,
+.wrapper nav #_contact:checked ~ label._contact a,
+.wrapper nav #_register:checked ~ label._register a,
+.wrapper nav #_product:checked ~ label._product a{
   color: #fff;
 }
 .wrapper nav label a i{
@@ -64,16 +64,16 @@ html,body{
   background: linear-gradient(45deg, #05abe0 0%,#8200f4 100%);
   transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.wrapper nav #login:checked ~ .tab{
+.wrapper nav #_login:checked ~ .tab{
   left: 20%;
 }
-.wrapper nav #contact:checked ~ .tab{
+.wrapper nav #_contact:checked ~ .tab{
   left: 60%;
 }
-.wrapper nav #register:checked ~ .tab{
+.wrapper nav #_register:checked ~ .tab{
   left: 40%;
 }
-.wrapper nav #product:checked ~ .tab{
+.wrapper nav #_product:checked ~ .tab{
   left: 80%;
 }
 .wrapper nav input{
@@ -85,7 +85,7 @@ html,body{
   position: absolute;
   top: 10%;
   padding: 20px;
-  background-color: #028f08;
+  background-color: #022f03;
   /*background-color: #1b6eae;*/
   width: 30%;
   color: white;
